@@ -1,13 +1,104 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>vite-project</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ohana Pastelería</title>
+  <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo">Ohana pasteleria</div>
+
+  <nav>
+    <ul class="menu">
+      <li>Ohana!</li>
+
+      <li class="dropdown">
+        Nuevos productos
+        <ul class="dropdown-menu">
+          <li>Pasteles</li>
+          <li>Pan relleno</li>
+          <li>Galletas</li>
+        </ul>
+      </li>
+
+      <li>Reseñas</li>
+      <li class="active">Sobre nosotros</li>
+    </ul>
+  </nav>
+
+  <input class="search" type="text" placeholder="Buscar">
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>PASTELES</h1>
+    <button>Descubre más</button>
+  </div>
+</section>
+
+<!-- CLIENTES -->
+<section class="clientes">
+  <h2>NUESTROS CLIENTES</h2>
+
+  <div class="clientes-grid">
+    <div class="cliente">
+      <img src="https://i.pravatar.cc/100?img=1">
+      ⭐⭐⭐⭐⭐
+      <p>Me encantó</p>
+    </div>
+    <div class="cliente">
+      <img src="https://i.pravatar.cc/100?img=2">
+      ⭐⭐⭐⭐⭐
+      <p>Me encantó</p>
+    </div>
+    <div class="cliente">
+      <img src="https://i.pravatar.cc/100?img=3">
+      ⭐⭐⭐⭐⭐
+      <p>Me encantó</p>
+    </div>
+    <div class="cliente">
+      <img src="https://i.pravatar.cc/100?img=4">
+      ⭐⭐⭐⭐⭐
+      <p>Me encantó</p>
+    </div>
+  </div>
+</section>
+
+<!-- SOBRE NOSOTROS -->
+<section class="sobre">
+  <div class="sobre-img">
+    <img src="https://images.unsplash.com/photo-1542826438-bd32f43d626f">
+  </div>
+  <div class="sobre-texto">
+    <h2>SOBRE NOSOTROS</h2>
+    <p>
+      Somos una pastelería dedicada a crear momentos dulces con ingredientes
+      de la mejor calidad. Cada pastel es hecho con amor y detalle.
+    </p>
+  </div>
+</section>
+
+<!-- EQUIPO -->
+<section class="equipo">
+  <h2>NUESTRO EQUIPO</h2>
+
+  <div class="equipo-grid">
+    <img src="https://images.unsplash.com/photo-1601004890684-d8cbf643f5f2">
+    <img src="https://images.unsplash.com/photo-1601004890684-d8cbf643f5f2">
+    <img src="https://images.unsplash.com/photo-1601004890684-d8cbf643f5f2">
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <p>Síguenos</p>
+  <p>Escríbenos</p>
+  <p>Contáctanos</p>
+</footer>
+
+</body>
 </html>
