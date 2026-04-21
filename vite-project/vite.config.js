@@ -7,8 +7,8 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, 'index.html'),
         pasteles: resolve(__dirname, 'Secciones/Pasteles.html'), 
-        pasteles: resolve(__dirname, 'Secciones/Panesrellenos.html'),
-        pasteles: resolve(__dirname, 'Secciones/Galletas.html')
+        panes: resolve(__dirname, 'Secciones/Panesrellenos.html'),
+        galletas: resolve(__dirname, 'Secciones/Galletas.html')
       },
     },
   },
