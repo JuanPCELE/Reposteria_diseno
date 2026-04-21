@@ -95,7 +95,9 @@ text-decoration:none;
 border-radius:6px;
 margin-top: auto;
 }
-
+.productos .btn:hover {
+  background: #e06f55;
+}
 
 /* NOTA */
 
