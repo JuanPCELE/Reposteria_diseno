@@ -9,7 +9,7 @@ background:#f6f6f6;
 
 .hero{
 padding:40px;
-background-color:#e7d5c7;
+background-color:#fefbfb;
 }
 
 .logo{
@@ -19,7 +19,7 @@ position:absolute;
 
 h2{
 font-size:50px;
-color:#f28c6f;
+color:#f7a9bb;
 font-weight: bold;
 }
 
@@ -89,14 +89,14 @@ margin-top:15px;
 display:inline-block;
 margin-top:10px;
 padding:10px 20px;
-background:#f28c6f;
+background:#f7a9bb;
 color:white;
 text-decoration:none;
 border-radius:6px;
 margin-top: auto;
 }
 .productos .btn:hover {
-  background: #e06f55;
+  background: #fbccbc;
 }
 
 /* NOTA */
@@ -136,7 +136,7 @@ border-radius:10px;
 /* FOOTER */
 
 footer{
-background:#e7d5c7;
+background:#fcf0f0;
 padding:30px;
 margin-top:40px;
 color:#f28c6f;
