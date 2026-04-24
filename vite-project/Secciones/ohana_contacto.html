@@ -1,0 +1,138 @@
+<link rel="stylesheet" href="../src/style.css">
+<header class="navbar">
+  <div class="logo">Ohana pasteleria</div>
+  <nav>
+    <ul class="menu">
+      <li><a href="index.html">Ohana!</a></li>
+       <li class="dropdown">
+        Nuevos productos
+        <ul class="dropdown-menu">
+          <li><a href="Secciones/Pasteles.html">Pasteles</a></li>
+          <li><a href="Secciones/Panesrellenos.html">Pan relleno</a></li>
+          <li><a href="Secciones/Galletas.html">Galletas</a></li>
+        </ul>
+      </li>
+      <li>Reseñas</li>
+      <li class="active">Contáctanos</li>
+    </ul>
+  </nav>
+  <input class="search" type="text" placeholder="Buscar">
+</header>
+
+<div class="hero">
+  <h1>CONTÁCTANOS</h1>
+</div>
+
+<section class="contact-section">
+  <div class="contact-card">
+    <h2>Envíanos un mensaje</h2>
+    <p class="subtitle">Pedidos especiales, preguntas o simplemente di hola</p>
+
+    <div class="form-row">
+      <div class="form-group">
+        <label>Nombre</label>
+        <input type="text" id="nombre" placeholder="Tu nombre">
+      </div>
+      <div class="form-group">
+        <label>Apellido</label>
+        <input type="text" id="apellido" placeholder="Tu apellido">
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group">
+        <label>Correo electrónico</label>
+        <input type="email" id="email" placeholder="correo@ejemplo.com">
+      </div>
+      <div class="form-group">
+        <label>Teléfono</label>
+        <input type="tel" id="telefono" placeholder="+52 33 0000 0000">
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group full">
+        <label>¿Qué te interesa?</label>
+        <select id="asunto">
+          <option value="">Selecciona una opción</option>
+          <option>Pedido de pastel personalizado</option>
+          <option>Pan relleno por encargo</option>
+          <option>Caja de galletas</option>
+          <option>Evento o celebración</option>
+          <option>Información general</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group full">
+        <label>Fecha del evento (opcional)</label>
+        <input type="date" id="fecha">
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group full">
+        <label>Mensaje</label>
+        <textarea id="mensaje" placeholder="Cuéntanos qué tienes en mente..."></textarea>
+      </div>
+    </div>
+
+    <button class="submit-btn" onclick="enviar()">Enviar mensaje ✦</button>
+    <div class="success-msg" id="success">
+      ¡Gracias por escribirnos! Te contactaremos pronto 🌸
+    </div>
+
+    <div class="info-strip">
+      <div class="info-item">
+        <div class="info-icon">📍</div>
+        <span>Tlaquepaque, Jalisco</span>
+      </div>
+      <div class="info-item">
+        <div class="info-icon">🕐</div>
+        <span>Lun–Sáb: 9am – 7pm</span>
+      </div>
+      <div class="info-item">
+        <div class="info-icon">📱</div>
+        <span>WhatsApp disponible</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="map-section">
+  <h3>¿DÓNDE ENCONTRARNOS?</h3>
+  <div class="map-wrapper">
+    <iframe
+      src="https://www.openstreetmap.org/export/embed.html?bbox=-103.3450%2C20.6320%2C-103.2950%2C20.6620&layer=mapnik&marker=20.6468%2C-103.3177"
+      loading="lazy"
+      title="Ubicación Ohana Pastelería - Tlaquepaque, Jalisco">
+    </iframe>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>Síguenos</p>
+  <p>Escríbenos</p>
+  <p>Contáctanos</p>
+</footer>
+
+<script>
+function enviar() {
+  const nombre = document.getElementById('nombre').value.trim();
+  const email = document.getElementById('email').value.trim();
+  const mensaje = document.getElementById('mensaje').value.trim();
+  if (!nombre || !email || !mensaje) {
+    alert('Por favor completa los campos de nombre, correo y mensaje.');
+    return;
+  }
+  const btn = document.querySelector('.submit-btn');
+  btn.textContent = 'Enviando...';
+  btn.disabled = true;
+  setTimeout(() => {
+    btn.textContent = 'Mensaje enviado ✦';
+    document.getElementById('success').style.display = 'block';
+    document.querySelectorAll('input, select, textarea').forEach(el => el.value = '');
+  }, 1000);
+}
+</script>

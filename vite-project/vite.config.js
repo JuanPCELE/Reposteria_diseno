@@ -1,12 +1,16 @@
 import { resolve } from 'path'
 import { defineConfig } from 'vite'
- 
+
 export default defineConfig({
   build: {
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'index.html'),
-        pasteles: resolve(__dirname, 'Pasteles.html'), 
+        pasteles: resolve(__dirname, 'Secciones/Pasteles.html'), 
+        panes: resolve(__dirname, 'Secciones/Panesrellenos.html'),
+        galletas: resolve(__dirname, 'Secciones/Galletas.html'),
+        contacto: resolve(__dirname, 'Secciones/ohana_contacto.html'),
+        secciones: resolve(__dirname, 'Secciones/Secciones.html') 
       },
     },
   },
