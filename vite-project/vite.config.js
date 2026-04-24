@@ -9,7 +9,7 @@ export default defineConfig({
         pasteles: resolve(__dirname, 'Secciones/Pasteles.html'), 
         panes: resolve(__dirname, 'Secciones/Panesrellenos.html'),
         galletas: resolve(__dirname, 'Secciones/Galletas.html'),
-        contacto: resolve(__dirname, 'ohana_contacto.html'),
+        contacto: resolve(__dirname, 'Secciones/ohana_contacto.html'),
         secciones: resolve(__dirname, 'Secciones/secciones.html') 
       },
     },
