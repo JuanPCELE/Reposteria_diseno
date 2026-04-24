@@ -302,3 +302,14 @@ body {
     .menu { display: none; }
     .hero h1 { font-size: 1.4rem; }
   }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  a:visited {
+  color: inherit;
+}
+
+a:hover {
+  color: var(--rosa-principal);
+}
